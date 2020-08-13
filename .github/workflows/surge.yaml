@@ -14,10 +14,20 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
+      
+      #Install Yarn
       - uses: borales/actions-yarn@v2.0.0
         with:
-         cmd: install   
+         cmd: install 
+     
+     #Build react with yarn
+      - name: Build react app
+        run: yarn build
+      
+     #Install surge
       - name: Run surge
         run: npm install --global surge
+     
+     #Deploy surge
       - name: Deploy surge 
-        run: surge ./build munnareact.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ munnareact.surge.sh --token ${{ secrets.SURGE_TOKEN }}
