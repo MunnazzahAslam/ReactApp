@@ -20,4 +20,4 @@ jobs:
       - name: Run surge
         run: npm install --global surge
       - name: Deploy surge 
-        run: surge ./build munnareact.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./ munnareact.surge.sh --token ${{ secrets.SURGE_TOKEN }}
