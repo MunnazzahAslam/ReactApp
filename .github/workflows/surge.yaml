@@ -30,4 +30,4 @@ jobs:
      
      #Deploy surge
       - name: Deploy surge 
-        run: surge ./ munnareact.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: surge ./build munnareact.surge.sh --token ${{ secrets.SURGE_TOKEN }}
