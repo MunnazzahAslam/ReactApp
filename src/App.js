@@ -6,10 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-         LETS START ROLLINGGGGG.
-         letss do thieeeeeeewwwww
+         LETS START ROLLING.
+         
         </p>
         <a
           className="App-link"
